@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:hint="Enter the event name"
+        android:layout_weight="3"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="Date - dd/mm/yy"
+        android:inputType="date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/editDetails"
+        android:layout_weight="8"
+        android:hint="Details"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textSize="16sp"
+        android:id="@+id/textViewnot"
+        android:text="Want 1 day before notification?"
+        android:layout_weight="1"/>
+
+
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="YES"
+        style="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/createButton"
+        android:layout_weight="3"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="CREATE EVENT"/>
+
+
+
+</LinearLayout>

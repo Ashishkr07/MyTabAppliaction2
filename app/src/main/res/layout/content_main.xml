@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ashish.mytabapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+
+            android:id="@+id/showSaved"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageViewup"
+                android:src="@drawable/reminderservice"
+                android:layout_weight="8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textStyle="italic"
+                android:id="@+id/textView1"
+                android:textColor="#000"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:text="View Saved Events"
+                android:textAlignment="center"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_weight="2.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageViewcentre"
+                android:src="@drawable/calendar"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/textView2"
+                android:text="Create By Date"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textStyle="bold"
+        android:id="@+id/button"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="CREATE NEW"
+        android:layout_weight="0.5"/>
+
+
+
+
+
+
+</LinearLayout>

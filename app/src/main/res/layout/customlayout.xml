@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editTextno"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#000"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/deletenum"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:background="@color/colorAccent"
+        android:text="Delete"/>
+
+
+</LinearLayout>
